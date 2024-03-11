@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* The main table of content for a screen width of 1920px as mentioned in a sample*/
+
+.tableContainer {
+    width: 971px;
+    height: 777px;
+    text-align: center;
+    margin: 290px 474px 590px;
+    opacity: 1;
+}
+.tableContainer h1 {
+    height: 55px;
+    font: normal normal bold 45px/55px Montserrat;
+    margin-bottom: 50px;
+    letter-spacing: 0px;
+    color: #202E4B;
+    opacity: 1;
+}
+.p1{
+    width: 971px;
+    height: 60px;
+    text-align: center;
+    font: normal normal normal 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #202E4B;
+    opacity: 1;
+
+}
+
+/* Fix the style of the form */
+
+.formContainer{
+    width: 970px;
+    height: 535px;
+    margin-top: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #9AC93C;
+    border-radius: 28px;
+    opacity: 1;
+    box-sizing: border-box; 
+    position: relative;
+}
+
+/* Fix total Common styles */
+
+.formContainer input,
+.formContainer select,
+.formContainer .noteContainer {
+    float: left;
+    box-sizing: border-box; 
+    letter-spacing: 0px;
+    color: #737373;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #737373;
+    border-radius: 10px;
+    padding-left: 25px;
+    text-align: left;
+    font: normal normal normal 20px/24px Montserrat;
+
+}
+input[name="vorname"] {
+    width: 429px;
+    height: 48px;
+    margin-left: 49px;
+    margin-top: 61px;
+}
+input[name="nachname"] {
+    width: 429px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: 61px;
+}
+input[name="email"] {
+    width: 873px;
+    height: 48px;
+    margin-left: 49px;
+    margin-top: 15px;
+}
+input[name="telefon"] {
+    width: 873px;
+    height: 48px;
+    margin-left: 49px;
+    margin-top: 15px;
+}
+.selectContainer{
+    width: 873px;
+    height: 48px;
+    margin-left: 49px;
+    margin-top: 15px;
+}
+.noteContainer{
+    width: 873px;
+    height: 110px;
+    margin: 15px 0 15px 49px;
+    padding-top: 12px;
+    resize: none;
+}
+.p2{
+    text-align: left;
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-left: 49px;
+
+}
+
+/* Changing the color of a word in the text */
+
+.highlight{
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #9AC93C;
+}
+
+/* Fix the style of Button by using the closet font family to our sample*/
+/* Font family of Helvetica Neue is not exist in google font, this is a paid font family */
+
+.button{
+    width: 275px;
+    height: 55px;
+    background: #9AC93C 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    border:  #9AC93C ;
+    opacity: 1;
+    font: normal normal bold 25px/30px Inter, sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    position: absolute; 
+    z-index: 1;
+    display:block;
+    margin: -27.5px 348px 0;
+}
+
+/* Insert our dynamic button text in desktop screen size */
+
+.button::before {
+  content: "Senden";
+}
+
+/* Fix Media query for Mobile screen size (width:390px) */
+
+
+@media only screen and (max-width: 390px) {
+
+/* The main table of content */
+
+    .tableContainer {
+        width: 100%;
+        height: 1288px;
+        margin: 0;
+        text-align: center;
+        opacity: 1;
+    }    
+
+    .tableContainer h1 {
+        display: block;
+        margin: 185px 30px 25px ;
+        width: 330px;
+        height: 33px;
+        text-align: center;
+        font: normal normal bold 27px/33px Montserrat;
+        letter-spacing: 0px;
+        color: #202E4B;
+        opacity: 1;
+    }
+    .p1{
+        display: block;
+        text-align: center;
+        font: normal normal normal 16px/19px Montserrat;
+        letter-spacing: 0px;
+        color: #202E4B;
+        opacity: 1;
+        width: 330px;
+        height: 57px;
+        margin: 0 30px 25px;
+    }
+
+/* Fix the style of the form */
+
+    .formContainer{
+        display: block;
+        width: 330px;
+        height: 494px;
+        margin:0 30px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 2px solid #9AC93C;
+        border-radius: 22px;
+        opacity: 1;
+        box-sizing: border-box; 
+        position: relative;
+    }
+
+/* Fix total Common styles */
+
+    .formContainer input,
+    .formContainer select,
+    .formContainer .noteContainer {
+        float: left;
+        box-sizing: border-box; 
+        letter-spacing: 0px;
+        color: #202E4B;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 8px;
+        opacity: 1;
+        padding-left: 10px;
+        text-align: left;
+        font: normal normal normal 16px/19px Montserrat;
+
+    }
+    input[name="vorname"] {
+        width: 283px;
+        height: 37px;
+        margin-left: 24px;
+        margin-top: 30px;
+        display: block;
+    }
+    input[name="nachname"] {
+        display: block;
+        width: 283px;
+        height: 37px;
+        margin-left: 24px;
+        margin-top: 15px;
+    }
+    input[name="email"] {
+        display: block;
+        width: 283px;
+        height: 37px;
+        margin-left: 24px;
+        margin-top: 15px;
+    }
+    input[name="telefon"] {
+        display: block;
+        width: 283px;
+        height: 37px;
+        margin-left: 24px;
+        margin-top: 15px;
+    }
+    .selectContainer{
+        width: 283px;
+        height: 37px;
+        margin-left: 24px;
+        margin-top: 15px;
+    }
+    .noteContainer{
+        width: 283px;
+        height: 118px;
+        margin: 15px 0 10px 24px;
+        padding-top: 9px;
+        resize: none;
+    }
+    .p2{
+        display: block;
+        width: 283px;
+        height: 30px;
+        text-align: left;
+        font: normal normal normal 12px/15px Montserrat;
+        letter-spacing: 0px;
+        color: #202E4B;
+        margin-left: 24px;
+    
+    }
+
+/* Changing the color of a word in the text */
+
+    .highlight{
+        font: normal normal bold 12px/15px Montserrat;
+        letter-spacing: 0px;
+        color: #9AC93C;
+    }
+
+/* Fix the style of Button by using the closet font family to our sample*/
+/* Font family of Helvetica Neue is not exist in google font, this is a paid font family */
+
+    .button{
+        display: block;
+        width: 178px;
+        height: 32px;
+        background: #9AC93C 0% 0% no-repeat padding-box;
+        border-radius: 7px;
+        border:  #9AC93C ;
+        opacity: 1;
+        text-align: center;
+        font: normal normal bold 18px/23px Arimo, sans-serif;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        position: absolute;
+        z-index: 1;
+        display:block;
+        margin: -16px 102px 0 110px;
+    }
+
+    /* Insert our dynamic button text in mobile screen size */
+
+    .button::before {
+        content: "Jetzt kontaktieren";
+
+    }
+
+    }

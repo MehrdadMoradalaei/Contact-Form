@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Task</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Preconnect to Google Fonts -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Link to Montserrat font family -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- The main table of content -->
+
+  <div class="tableContainer">
+    <h1>Kontakformular</h1>
+    <p class="p1">Unser Team unterstützt dich persönlich dabei, die richtige Weiterbildung für dich zu finden.</p>
+    
+    <!-- Implement the form -->
+
+    <div class="formContainer">
+      <form>
+        <input type="text" id="vname" name="vorname" placeholder="Vorname*">
+        <input type="text" id="nname" name="nachname" placeholder="Nachname*">
+        <input type="email" id="email" name="email" placeholder="E-Mail*">
+        <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer*">
+
+    <!-- Implement the Dropdown menu for selecting an option with a disable option as a placeholder-->
+
+        <select class="selectContainer" id="country" name="country">
+          <option value="" disabled selected hidden>Bitte wähle dein Anliegen*</option>
+          <option value="option1" class="option" >option 1</option>
+        </select>
+
+    <!-- Implement the textarea element -->
+
+        <textarea class="noteContainer">Nachricht</textarea>
+      </form>  
+
+      <p class="p2">Weitere Informationen können Sie der <span class="highlight">Datenschutzerklärung</span> entnehmen.</p>
+    </div>
+
+    <!-- Implement the Button -->
+
+    <button class="button" type="submit"></button>
+
+  </div>
+</body>
+</html>
